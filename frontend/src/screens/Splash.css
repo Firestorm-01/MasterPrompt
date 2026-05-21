@@ -1,0 +1,8 @@
+.splash { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.splash-content { text-align: center; z-index: 1; max-width: 700px; padding: 40px; }
+.logo { font-size: 48px; font-weight: bold; margin-bottom: 40px; }
+.logo-bracket { color: var(--accent); }
+.logo-text { color: var(--text-primary); letter-spacing: 8px; }
+.terminal-output { text-align: left; background: var(--bg-secondary); border: 1px solid var(--border); padding: 24px; margin-bottom: 40px; font-size: 14px; line-height: 1.8; color: var(--accent); min-height: 200px; white-space: pre-wrap; }
+.splash-footer { margin-top: 40px; color: var(--text-secondary); font-size: 12px; }
+.grid-bg { position: absolute; inset: 0; background-image: linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px); background-size: 50px 50px; pointer-events: none; }

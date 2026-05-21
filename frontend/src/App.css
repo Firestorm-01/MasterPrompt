@@ -1,0 +1,36 @@
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a1a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --accent: #00ff88;
+  --accent-dim: #00cc6a;
+  --accent-glow: rgba(0, 255, 136, 0.15);
+  --border: #2a2a2a;
+  --error: #ff4444;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; min-height: 100vh; }
+#root { min-height: 100vh; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+.fade-in { animation: fadeIn 0.3s ease-out; }
+.slide-in { animation: slideIn 0.3s ease-out; }
+.btn { background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 12px 24px; font-family: inherit; font-size: 14px; cursor: pointer; transition: all 0.2s ease; text-transform: uppercase; letter-spacing: 1px; }
+.btn:hover { background: var(--accent); color: var(--bg-primary); box-shadow: 0 0 20px var(--accent-glow); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: var(--bg-primary); }
+.btn-primary:hover { background: var(--accent-dim); }
+.input { background: var(--bg-secondary); border: 1px solid var(--border); color: var(--text-primary); padding: 10px 14px; font-family: inherit; font-size: 13px; width: 100%; transition: border-color 0.2s ease; }
+.input:focus { outline: none; border-color: var(--accent); }
+.input::placeholder { color: var(--text-secondary); }
+.badge { display: inline-block; padding: 2px 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; border-radius: 2px; }
+.badge-free { background: var(--accent-glow); color: var(--accent); border: 1px solid var(--accent); }
+.cursor { display: inline-block; width: 8px; height: 16px; background: var(--accent); animation: blink 1s infinite; margin-left: 2px; vertical-align: middle; }
