@@ -1,6 +1,6 @@
 # Agentic AI Assistant
-
-A production-ready AI agent with 50+ tool integrations, built with LangGraph ReAct loop, FastAPI SSE streaming, and a React frontend.
+⚠️Entire project needs to be tested before usage.This is a version 1
+An AI agent with 50+ tool integrations, built with LangGraph ReAct loop, FastAPI SSE streaming, and a React frontend.
 
 ## Quick Start
 
