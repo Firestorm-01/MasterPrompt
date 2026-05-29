@@ -1,5 +1,5 @@
 # Agentic AI Assistant
-⚠️Entire project needs to be tested before usage.This is a version 1.
+⚠️Entire project needs to be tested before usage.This is a prototype.
 An AI agent with 50+ tool integrations, built with LangGraph ReAct loop, FastAPI SSE streaming, and a React frontend.
 
 ## Quick Start
